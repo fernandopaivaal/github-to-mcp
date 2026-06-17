@@ -1,4 +1,7 @@
 {
+  "permissions": {
+    "allow": ["Bash(notebooklm *)"]
+  },
   "hooks": {
     "SessionStart": [
       {
