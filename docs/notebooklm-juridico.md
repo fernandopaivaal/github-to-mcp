@@ -62,25 +62,20 @@ limite de uma fonte** — por isso o ideal é **dividir o PDF em partes** e adic
 cada parte como uma fonte separada **no mesmo notebook** (o relatório considera
 todas as fontes juntas).
 
-Dividir um PDF grande em blocos de ~500 páginas:
+Use o helper `scripts/split-pdf.sh` — ele detecta automaticamente a ferramenta
+disponível (qpdf, pdftk ou poppler) e fatia em blocos de N páginas (default 500):
 
 ```bash
-# Opção A: qpdf
-qpdf --split-pages=500 autos.pdf parte.pdf
-#   → gera parte-0001-0500.pdf, parte-0501-1000.pdf, ...
+# Fatiar (gera ./split/autos/autos-0001-0500.pdf, autos-0501-1000.pdf, ...)
+scripts/split-pdf.sh autos.pdf 500
 
-# Opção B: pdftk
-pdftk autos.pdf burst output pagina_%04d.pdf   # 1 arquivo por página (depois reagrupe)
-
-# Opção C: poppler
-pdfseparate -f 1 -l 500 autos.pdf parte1_%d.pdf
+# Enviar todos os blocos ao mesmo notebook
+scripts/notebooklm-juridico.sh split/autos/*.pdf "Processo X"
 ```
 
-Depois:
-
-```bash
-scripts/notebooklm-juridico.sh parte-0001-0500.pdf parte-0501-1000.pdf ... "Processo X"
-```
+Instale uma das ferramentas localmente, se necessário:
+`brew install qpdf` (recomendado) ou `apt install qpdf` /
+`apt install pdftk poppler-utils`.
 
 Dica: se uma fonte falhar no processamento (status de erro), normalmente é
 tamanho — reduza o tamanho do bloco e tente de novo. `notebooklm source clean -n <nb>`

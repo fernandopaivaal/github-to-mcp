@@ -61,21 +61,40 @@ echo "→ Gerando relatório de análise jurídica ($FORMAT)…"
 PROMPT_FILE="$(mktemp)"
 trap 'rm -f "$PROMPT_FILE"' EXIT
 cat > "$PROMPT_FILE" <<'PROMPT'
-Você é um assistente jurídico. Analise as fontes (autos de processo judicial) e
-produza um relatório estruturado em português do Brasil, objetivo e citando as
-fontes [1], [2] ao longo do texto. Use exatamente estas seções:
+Você é um assistente jurídico brasileiro. Analise as fontes (autos de processo
+judicial) e produza um relatório estruturado em português do Brasil, objetivo e
+citando as fontes [1], [2] ao longo do texto.
 
-1. Identificação: número do processo, vara/juízo/tribunal, partes (autor, réu e
-   respectivos advogados), valor da causa e fase processual atual.
+Primeiro, identifique a(s) área(s) jurídica(s) do processo (ex.: cível,
+trabalhista, tributário, penal, administrativo, consumidor, família, empresarial)
+e adapte a análise a ela(s). Use exatamente estas seções:
+
+1. Identificação: número do processo, vara/juízo/tribunal, área(s) jurídica(s),
+   partes (autor/reclamante/exequente e réu/reclamada/executado, com respectivos
+   advogados), valor da causa e fase processual atual.
 2. Síntese fática: fatos relevantes em ordem cronológica, sempre com as datas.
 3. Pedidos e causa de pedir.
-4. Teses e fundamentos jurídicos de cada parte.
+4. Teses e fundamentos jurídicos de cada parte (com os dispositivos legais e as
+   súmulas/precedentes citados).
 5. Provas produzidas e sua relevância.
 6. Decisões e andamentos (despachos, decisões interlocutórias, sentenças,
    acórdãos), com data e teor resumido de cada um.
 7. Prazos em aberto e próximos atos processuais esperados.
-8. Pontos controvertidos e riscos.
-9. Recomendações e próximos passos.
+8. Pontos controvertidos e riscos (incluindo prescrição/decadência e nulidades).
+9. Análise por área jurídica — preencha apenas as aplicáveis ao processo:
+   - Cível: natureza da obrigação/responsabilidade (contratual ou
+     extracontratual), nexo causal, danos (material, moral, lucros cessantes),
+     cláusulas contratuais relevantes e tutelas/medidas de urgência.
+   - Trabalhista: vínculo empregatício, verbas rescisórias, horas extras, FGTS,
+     adicionais, dano moral, responsabilidade subsidiária/solidária e eventual
+     execução com cálculos.
+   - Tributário: tributo(s) e competência, fato gerador, base de cálculo,
+     lançamento, decadência/prescrição, certidão de dívida ativa, garantias e
+     discussão administrativa x judicial.
+   - Outras áreas (penal, administrativo, consumidor, família, empresarial etc.):
+     faça a análise específica equivalente, destacando os institutos próprios da
+     matéria.
+10. Recomendações e próximos passos (estratégia, recursos cabíveis e seus prazos).
 
 Seja preciso com nomes, números e datas. Se alguma informação não constar nos
 autos, escreva "não consta nas fontes".
