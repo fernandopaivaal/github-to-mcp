@@ -6,6 +6,14 @@ Roda na **sua máquina local** (precisa de login no Google). Guia completo:
 
 ## Setup (uma vez)
 
+**Windows (Git Bash):** um comando faz tudo (deps + Chromium + login):
+
+```bash
+bash scripts/setup-windows.sh
+```
+
+**macOS / Linux (manual):**
+
 ```bash
 pip install "notebooklm-py[browser]"
 python -m playwright install chromium
