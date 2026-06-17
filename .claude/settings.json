@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pip install -q -r requirements.txt 2>/dev/null || true",
+            "statusMessage": "Installing Python deps (notebooklm-py)..."
+          }
+        ]
+      }
+    ]
+  }
+}
